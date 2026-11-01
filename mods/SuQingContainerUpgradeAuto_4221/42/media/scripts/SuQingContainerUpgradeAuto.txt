@@ -1,0 +1,145 @@
+module SuQingContainerUpgradeAuto
+{
+    craftRecipe SuQingAutoUpgrade1
+    {
+        Icon = Item_SuQingAutoUpgrade1,
+        timedAction = SewingCloth,
+        Time = 40,
+        NeedToBeLearn = False,
+        AllowBatchCraft = False,
+        Tags = InHandCraft,
+        category = SuQingAuto,
+        xpAward = Tailoring:2,
+        OnTest = SuQingContainerUpgradeAuto.Test1,
+        OnCreate = SuQingContainerUpgradeAuto.Create1,
+        inputs
+        {
+            item 1 [Base.2dw_astrobackpack;Base.2dw_classicsailorbag;Base.2dw_huyukanobag;Base.2dw_lopearbackpack;Base.2dw_nighthawkbeltl;Base.2dw_nighthawkbeltm;Base.2dw_nighthawkbelts;Base.2dw_reapenforcearmourbow;Base.2dw_reapenforcebag;Base.2dw_searchbag;Base.2dw_seasidebag;Base.2dw_skulllegbagl;Base.2dw_skulllegbagsm;Base.2dw_stregabackpackl;Base.2dw_stregabackpackm;Base.2dw_stregabackpacks;Base.2dw_winterbag;Base.AmmoStrap_Brown_Bullets;Base.AmmoStrap_Brown_Shells;Base.AmmoStrap_Bullets;Base.AmmoStrap_Bullets_308;Base.AmmoStrap_Shells;Base.BagS_cat_1;Base.BagS_cat_10;Base.BagS_cat_11;Base.BagS_cat_12;Base.BagS_cat_13;Base.BagS_cat_14;Base.BagS_cat_15;Base.BagS_cat_16;Base.BagS_cat_17;Base.BagS_cat_18;Base.BagS_cat_19;Base.BagS_cat_2;Base.BagS_cat_20;Base.BagS_cat_21;Base.BagS_cat_22;Base.BagS_cat_23;Base.BagS_cat_24;Base.BagS_cat_25;Base.BagS_cat_3;Base.BagS_cat_4;Base.BagS_cat_5;Base.BagS_cat_6;Base.BagS_cat_7;Base.BagS_cat_8;Base.BagS_cat_9;Base.Bag_ALICE_BeltSus;Base.Bag_ALICE_BeltSus_Camo;Base.Bag_ALICE_BeltSus_Green;Base.Bag_ALICEpack;Base.Bag_ALICEpack_Army;Base.Bag_ALICEpack_DesertCamo;Base.Bag_BaseballBag;Base.Bag_BigHikingBag;Base.Bag_BigHikingBag_Travel;Base.Bag_BreakdownBag;Base.Bag_BurglarBag;Base.Bag_ChestRig;Base.Bag_ChestRig_050;Base.Bag_ChestRig_056;Base.Bag_ChestRig_057;Base.Bag_ChestRig_060;Base.Bag_ChestRig_061;Base.Bag_ChestRig_066;Base.Bag_ChestRig_068;Base.Bag_ChestRig_069;Base.Bag_ChestRig_072;Base.Bag_ChestRig_083;Base.Bag_ChestRig_085;Base.Bag_ChestRig_086;Base.Bag_ChestRig_D01;Base.Bag_ChestRig_DAR;Base.Bag_ChestRig_DRA;Base.Bag_ChestRig_DSA;Base.Bag_ChestRig_G01;Base.Bag_ChestRig_GIR;Base.Bag_ChestRig_HD3;Base.Bag_ChestRig_HK3;Base.Bag_ChestRig_Tarp;Base.Bag_ClothSatchel_Burlap;Base.Bag_ClothSatchel_Cotton;Base.Bag_ClothSatchel_Denim;Base.Bag_ClothSatchel_DenimBlack;Base.Bag_ClothSatchel_DenimLight;Base.Bag_CraftedFramepack_Large;Base.Bag_CraftedFramepack_Large2;Base.Bag_CraftedFramepack_Large3;Base.Bag_CraftedFramepack_Small;Base.Bag_DuffelBag;Base.Bag_DuffelBagTINT;Base.Bag_FannyPackBack;Base.Bag_FannyPackBack_Hide;Base.Bag_FannyPackBack_Tarp;Base.Bag_FannyPackFront;Base.Bag_FannyPackFront_Hide;Base.Bag_FannyPackFront_Tarp;Base.Bag_FishingBasket;Base.Bag_FoodCanned;Base.Bag_FoodSnacks;Base.Bag_GolfBag;Base.Bag_GolfBag_Melee;Base.Bag_HideSatchel;Base.Bag_HideSlingBag;Base.Bag_HikingBag_Travel;Base.Bag_HydrationBackpack;Base.Bag_HydrationBackpack_Camo;Base.Bag_InmateEscapedBag;Base.Bag_MedicalBag;Base.Bag_Military;Base.Bag_MoneyBag;Base.Bag_NormalHikingBag;Base.Bag_Police;Base.Bag_RifleCaseCloth;Base.Bag_RifleCaseCloth2;Base.Bag_RifleCaseClothCamo;Base.Bag_SWAT;Base.Bag_Satchel;Base.Bag_SatchelPhoto;Base.Bag_Satchel_Fishing;Base.Bag_Satchel_Leather;Base.Bag_Satchel_Mail;Base.Bag_Satchel_Medical;Base.Bag_Satchel_Military;Base.Bag_Schoolbag;Base.Bag_Schoolbag_Kids;Base.Bag_Schoolbag_Medical;Base.Bag_Schoolbag_Patches;Base.Bag_Schoolbag_Travel;Base.Bag_SheetSlingBag;Base.Bag_Sheriff;Base.Bag_ShotgunBag;Base.Bag_ShotgunCaseCloth;Base.Bag_ShotgunCaseCloth2;Base.Bag_ShotgunDblBag;Base.Bag_ShotgunDblSawnoffBag;Base.Bag_ShotgunSawnoffBag;Base.Bag_SurvivorBag;Base.Bag_TarpFramepack_Large;Base.Bag_TarpFramepack_Small;Base.Bag_TarpSlingBag;Base.Bag_TennisBag;Base.Bag_ToolBag;Base.Bag_WeaponBag;Base.Bag_WorkerBag;Base.Bag_cat54;Base.Bag_cat55;Base.Bag_cat61;Base.Bag_cat63;Base.CamoHydrationPackpack;Base.HolsterShoulder;Base.Mai_Vest_01;Base.PE_CraftedFramepack_Large;Base.PE_FannyPackBack;Base.PE_FannyPackFront;Base.PE_HideSatchel;Base.ResidentEvilBackPack;Base.ResidentEvilSuspenders;Base.RuBag;Base.RuBag1;Base.RuBag2;Base.SST02_ChestRig;Base.SST_Belt;Base.SST_Belt_1;Base.bag_cat40;Base.cat_AutoReload;TheyKnew.MysteriousBackPack;TheyKnew.MysteriousSatchel] mode:keep flags[IsNotWorn;AllowFavorite;ItemCount],
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 4 [Base.RippedSheets] mode:destroy,
+            item 2 [Base.Thread],
+        }
+        outputs
+        {
+        }
+    }
+    craftRecipe SuQingAutoUpgrade2
+    {
+        Icon = Item_SuQingAutoUpgrade2,
+        timedAction = SewingCloth,
+        Time = 60,
+        NeedToBeLearn = False,
+        AllowBatchCraft = False,
+        Tags = InHandCraft,
+        category = SuQingAuto,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:3,
+        OnTest = SuQingContainerUpgradeAuto.Test2,
+        OnCreate = SuQingContainerUpgradeAuto.Create2,
+        inputs
+        {
+            item 1 [Base.2dw_astrobackpack;Base.2dw_classicsailorbag;Base.2dw_huyukanobag;Base.2dw_lopearbackpack;Base.2dw_nighthawkbeltl;Base.2dw_nighthawkbeltm;Base.2dw_nighthawkbelts;Base.2dw_reapenforcearmourbow;Base.2dw_reapenforcebag;Base.2dw_searchbag;Base.2dw_seasidebag;Base.2dw_skulllegbagl;Base.2dw_skulllegbagsm;Base.2dw_stregabackpackl;Base.2dw_stregabackpackm;Base.2dw_stregabackpacks;Base.2dw_winterbag;Base.AmmoStrap_Brown_Bullets;Base.AmmoStrap_Brown_Shells;Base.AmmoStrap_Bullets;Base.AmmoStrap_Bullets_308;Base.AmmoStrap_Shells;Base.BagS_cat_1;Base.BagS_cat_10;Base.BagS_cat_11;Base.BagS_cat_12;Base.BagS_cat_13;Base.BagS_cat_14;Base.BagS_cat_15;Base.BagS_cat_16;Base.BagS_cat_17;Base.BagS_cat_18;Base.BagS_cat_19;Base.BagS_cat_2;Base.BagS_cat_20;Base.BagS_cat_21;Base.BagS_cat_22;Base.BagS_cat_23;Base.BagS_cat_24;Base.BagS_cat_25;Base.BagS_cat_3;Base.BagS_cat_4;Base.BagS_cat_5;Base.BagS_cat_6;Base.BagS_cat_7;Base.BagS_cat_8;Base.BagS_cat_9;Base.Bag_ALICE_BeltSus;Base.Bag_ALICE_BeltSus_Camo;Base.Bag_ALICE_BeltSus_Green;Base.Bag_ALICEpack;Base.Bag_ALICEpack_Army;Base.Bag_ALICEpack_DesertCamo;Base.Bag_BaseballBag;Base.Bag_BigHikingBag;Base.Bag_BigHikingBag_Travel;Base.Bag_BreakdownBag;Base.Bag_BurglarBag;Base.Bag_ChestRig;Base.Bag_ChestRig_050;Base.Bag_ChestRig_056;Base.Bag_ChestRig_057;Base.Bag_ChestRig_060;Base.Bag_ChestRig_061;Base.Bag_ChestRig_066;Base.Bag_ChestRig_068;Base.Bag_ChestRig_069;Base.Bag_ChestRig_072;Base.Bag_ChestRig_083;Base.Bag_ChestRig_085;Base.Bag_ChestRig_086;Base.Bag_ChestRig_D01;Base.Bag_ChestRig_DAR;Base.Bag_ChestRig_DRA;Base.Bag_ChestRig_DSA;Base.Bag_ChestRig_G01;Base.Bag_ChestRig_GIR;Base.Bag_ChestRig_HD3;Base.Bag_ChestRig_HK3;Base.Bag_ChestRig_Tarp;Base.Bag_ClothSatchel_Burlap;Base.Bag_ClothSatchel_Cotton;Base.Bag_ClothSatchel_Denim;Base.Bag_ClothSatchel_DenimBlack;Base.Bag_ClothSatchel_DenimLight;Base.Bag_CraftedFramepack_Large;Base.Bag_CraftedFramepack_Large2;Base.Bag_CraftedFramepack_Large3;Base.Bag_CraftedFramepack_Small;Base.Bag_DuffelBag;Base.Bag_DuffelBagTINT;Base.Bag_FannyPackBack;Base.Bag_FannyPackBack_Hide;Base.Bag_FannyPackBack_Tarp;Base.Bag_FannyPackFront;Base.Bag_FannyPackFront_Hide;Base.Bag_FannyPackFront_Tarp;Base.Bag_FishingBasket;Base.Bag_FoodCanned;Base.Bag_FoodSnacks;Base.Bag_GolfBag;Base.Bag_GolfBag_Melee;Base.Bag_HideSatchel;Base.Bag_HideSlingBag;Base.Bag_HikingBag_Travel;Base.Bag_HydrationBackpack;Base.Bag_HydrationBackpack_Camo;Base.Bag_InmateEscapedBag;Base.Bag_MedicalBag;Base.Bag_Military;Base.Bag_MoneyBag;Base.Bag_NormalHikingBag;Base.Bag_Police;Base.Bag_RifleCaseCloth;Base.Bag_RifleCaseCloth2;Base.Bag_RifleCaseClothCamo;Base.Bag_SWAT;Base.Bag_Satchel;Base.Bag_SatchelPhoto;Base.Bag_Satchel_Fishing;Base.Bag_Satchel_Leather;Base.Bag_Satchel_Mail;Base.Bag_Satchel_Medical;Base.Bag_Satchel_Military;Base.Bag_Schoolbag;Base.Bag_Schoolbag_Kids;Base.Bag_Schoolbag_Medical;Base.Bag_Schoolbag_Patches;Base.Bag_Schoolbag_Travel;Base.Bag_SheetSlingBag;Base.Bag_Sheriff;Base.Bag_ShotgunBag;Base.Bag_ShotgunCaseCloth;Base.Bag_ShotgunCaseCloth2;Base.Bag_ShotgunDblBag;Base.Bag_ShotgunDblSawnoffBag;Base.Bag_ShotgunSawnoffBag;Base.Bag_SurvivorBag;Base.Bag_TarpFramepack_Large;Base.Bag_TarpFramepack_Small;Base.Bag_TarpSlingBag;Base.Bag_TennisBag;Base.Bag_ToolBag;Base.Bag_WeaponBag;Base.Bag_WorkerBag;Base.Bag_cat54;Base.Bag_cat55;Base.Bag_cat61;Base.Bag_cat63;Base.CamoHydrationPackpack;Base.HolsterShoulder;Base.Mai_Vest_01;Base.PE_CraftedFramepack_Large;Base.PE_FannyPackBack;Base.PE_FannyPackFront;Base.PE_HideSatchel;Base.ResidentEvilBackPack;Base.ResidentEvilSuspenders;Base.RuBag;Base.RuBag1;Base.RuBag2;Base.SST02_ChestRig;Base.SST_Belt;Base.SST_Belt_1;Base.bag_cat40;Base.cat_AutoReload;TheyKnew.MysteriousBackPack;TheyKnew.MysteriousSatchel] mode:keep flags[IsNotWorn;AllowFavorite;ItemCount],
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 6 [Base.RippedSheets] mode:destroy,
+            item 2 [Base.LeatherStrips] mode:destroy,
+            item 4 [Base.Thread],
+        }
+        outputs
+        {
+        }
+    }
+    craftRecipe SuQingAutoUpgrade3
+    {
+        Icon = Item_SuQingAutoUpgrade3,
+        timedAction = SewingCloth,
+        Time = 80,
+        NeedToBeLearn = False,
+        AllowBatchCraft = False,
+        Tags = InHandCraft,
+        category = SuQingAuto,
+        SkillRequired = Tailoring:2,
+        xpAward = Tailoring:4,
+        OnTest = SuQingContainerUpgradeAuto.Test3,
+        OnCreate = SuQingContainerUpgradeAuto.Create3,
+        inputs
+        {
+            item 1 [Base.2dw_astrobackpack;Base.2dw_classicsailorbag;Base.2dw_huyukanobag;Base.2dw_lopearbackpack;Base.2dw_nighthawkbeltl;Base.2dw_nighthawkbeltm;Base.2dw_nighthawkbelts;Base.2dw_reapenforcearmourbow;Base.2dw_reapenforcebag;Base.2dw_searchbag;Base.2dw_seasidebag;Base.2dw_skulllegbagl;Base.2dw_skulllegbagsm;Base.2dw_stregabackpackl;Base.2dw_stregabackpackm;Base.2dw_stregabackpacks;Base.2dw_winterbag;Base.AmmoStrap_Brown_Bullets;Base.AmmoStrap_Brown_Shells;Base.AmmoStrap_Bullets;Base.AmmoStrap_Bullets_308;Base.AmmoStrap_Shells;Base.BagS_cat_1;Base.BagS_cat_10;Base.BagS_cat_11;Base.BagS_cat_12;Base.BagS_cat_13;Base.BagS_cat_14;Base.BagS_cat_15;Base.BagS_cat_16;Base.BagS_cat_17;Base.BagS_cat_18;Base.BagS_cat_19;Base.BagS_cat_2;Base.BagS_cat_20;Base.BagS_cat_21;Base.BagS_cat_22;Base.BagS_cat_23;Base.BagS_cat_24;Base.BagS_cat_25;Base.BagS_cat_3;Base.BagS_cat_4;Base.BagS_cat_5;Base.BagS_cat_6;Base.BagS_cat_7;Base.BagS_cat_8;Base.BagS_cat_9;Base.Bag_ALICE_BeltSus;Base.Bag_ALICE_BeltSus_Camo;Base.Bag_ALICE_BeltSus_Green;Base.Bag_ALICEpack;Base.Bag_ALICEpack_Army;Base.Bag_ALICEpack_DesertCamo;Base.Bag_BaseballBag;Base.Bag_BigHikingBag;Base.Bag_BigHikingBag_Travel;Base.Bag_BreakdownBag;Base.Bag_BurglarBag;Base.Bag_ChestRig;Base.Bag_ChestRig_050;Base.Bag_ChestRig_056;Base.Bag_ChestRig_057;Base.Bag_ChestRig_060;Base.Bag_ChestRig_061;Base.Bag_ChestRig_066;Base.Bag_ChestRig_068;Base.Bag_ChestRig_069;Base.Bag_ChestRig_072;Base.Bag_ChestRig_083;Base.Bag_ChestRig_085;Base.Bag_ChestRig_086;Base.Bag_ChestRig_D01;Base.Bag_ChestRig_DAR;Base.Bag_ChestRig_DRA;Base.Bag_ChestRig_DSA;Base.Bag_ChestRig_G01;Base.Bag_ChestRig_GIR;Base.Bag_ChestRig_HD3;Base.Bag_ChestRig_HK3;Base.Bag_ChestRig_Tarp;Base.Bag_ClothSatchel_Burlap;Base.Bag_ClothSatchel_Cotton;Base.Bag_ClothSatchel_Denim;Base.Bag_ClothSatchel_DenimBlack;Base.Bag_ClothSatchel_DenimLight;Base.Bag_CraftedFramepack_Large;Base.Bag_CraftedFramepack_Large2;Base.Bag_CraftedFramepack_Large3;Base.Bag_CraftedFramepack_Small;Base.Bag_DuffelBag;Base.Bag_DuffelBagTINT;Base.Bag_FannyPackBack;Base.Bag_FannyPackBack_Hide;Base.Bag_FannyPackBack_Tarp;Base.Bag_FannyPackFront;Base.Bag_FannyPackFront_Hide;Base.Bag_FannyPackFront_Tarp;Base.Bag_FishingBasket;Base.Bag_FoodCanned;Base.Bag_FoodSnacks;Base.Bag_GolfBag;Base.Bag_GolfBag_Melee;Base.Bag_HideSatchel;Base.Bag_HideSlingBag;Base.Bag_HikingBag_Travel;Base.Bag_HydrationBackpack;Base.Bag_HydrationBackpack_Camo;Base.Bag_InmateEscapedBag;Base.Bag_MedicalBag;Base.Bag_Military;Base.Bag_MoneyBag;Base.Bag_NormalHikingBag;Base.Bag_Police;Base.Bag_RifleCaseCloth;Base.Bag_RifleCaseCloth2;Base.Bag_RifleCaseClothCamo;Base.Bag_SWAT;Base.Bag_Satchel;Base.Bag_SatchelPhoto;Base.Bag_Satchel_Fishing;Base.Bag_Satchel_Leather;Base.Bag_Satchel_Mail;Base.Bag_Satchel_Medical;Base.Bag_Satchel_Military;Base.Bag_Schoolbag;Base.Bag_Schoolbag_Kids;Base.Bag_Schoolbag_Medical;Base.Bag_Schoolbag_Patches;Base.Bag_Schoolbag_Travel;Base.Bag_SheetSlingBag;Base.Bag_Sheriff;Base.Bag_ShotgunBag;Base.Bag_ShotgunCaseCloth;Base.Bag_ShotgunCaseCloth2;Base.Bag_ShotgunDblBag;Base.Bag_ShotgunDblSawnoffBag;Base.Bag_ShotgunSawnoffBag;Base.Bag_SurvivorBag;Base.Bag_TarpFramepack_Large;Base.Bag_TarpFramepack_Small;Base.Bag_TarpSlingBag;Base.Bag_TennisBag;Base.Bag_ToolBag;Base.Bag_WeaponBag;Base.Bag_WorkerBag;Base.Bag_cat54;Base.Bag_cat55;Base.Bag_cat61;Base.Bag_cat63;Base.CamoHydrationPackpack;Base.HolsterShoulder;Base.Mai_Vest_01;Base.PE_CraftedFramepack_Large;Base.PE_FannyPackBack;Base.PE_FannyPackFront;Base.PE_HideSatchel;Base.ResidentEvilBackPack;Base.ResidentEvilSuspenders;Base.RuBag;Base.RuBag1;Base.RuBag2;Base.SST02_ChestRig;Base.SST_Belt;Base.SST_Belt_1;Base.bag_cat40;Base.cat_AutoReload;TheyKnew.MysteriousBackPack;TheyKnew.MysteriousSatchel] mode:keep flags[IsNotWorn;AllowFavorite;ItemCount],
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 10 [Base.RippedSheets] mode:destroy,
+            item 4 [Base.LeatherStrips] mode:destroy,
+            item 6 [Base.Thread],
+        }
+        outputs
+        {
+        }
+    }
+    craftRecipe SuQingAutoUpgrade4
+    {
+        Icon = Item_SuQingAutoUpgrade4,
+        timedAction = SewingCloth,
+        Time = 100,
+        NeedToBeLearn = False,
+        AllowBatchCraft = False,
+        Tags = InHandCraft,
+        category = SuQingAuto,
+        SkillRequired = Tailoring:3,
+        xpAward = Tailoring:5,
+        OnTest = SuQingContainerUpgradeAuto.Test4,
+        OnCreate = SuQingContainerUpgradeAuto.Create4,
+        inputs
+        {
+            item 1 [Base.2dw_astrobackpack;Base.2dw_classicsailorbag;Base.2dw_huyukanobag;Base.2dw_lopearbackpack;Base.2dw_nighthawkbeltl;Base.2dw_nighthawkbeltm;Base.2dw_nighthawkbelts;Base.2dw_reapenforcearmourbow;Base.2dw_reapenforcebag;Base.2dw_searchbag;Base.2dw_seasidebag;Base.2dw_skulllegbagl;Base.2dw_skulllegbagsm;Base.2dw_stregabackpackl;Base.2dw_stregabackpackm;Base.2dw_stregabackpacks;Base.2dw_winterbag;Base.AmmoStrap_Brown_Bullets;Base.AmmoStrap_Brown_Shells;Base.AmmoStrap_Bullets;Base.AmmoStrap_Bullets_308;Base.AmmoStrap_Shells;Base.BagS_cat_1;Base.BagS_cat_10;Base.BagS_cat_11;Base.BagS_cat_12;Base.BagS_cat_13;Base.BagS_cat_14;Base.BagS_cat_15;Base.BagS_cat_16;Base.BagS_cat_17;Base.BagS_cat_18;Base.BagS_cat_19;Base.BagS_cat_2;Base.BagS_cat_20;Base.BagS_cat_21;Base.BagS_cat_22;Base.BagS_cat_23;Base.BagS_cat_24;Base.BagS_cat_25;Base.BagS_cat_3;Base.BagS_cat_4;Base.BagS_cat_5;Base.BagS_cat_6;Base.BagS_cat_7;Base.BagS_cat_8;Base.BagS_cat_9;Base.Bag_ALICE_BeltSus;Base.Bag_ALICE_BeltSus_Camo;Base.Bag_ALICE_BeltSus_Green;Base.Bag_ALICEpack;Base.Bag_ALICEpack_Army;Base.Bag_ALICEpack_DesertCamo;Base.Bag_BaseballBag;Base.Bag_BigHikingBag;Base.Bag_BigHikingBag_Travel;Base.Bag_BreakdownBag;Base.Bag_BurglarBag;Base.Bag_ChestRig;Base.Bag_ChestRig_050;Base.Bag_ChestRig_056;Base.Bag_ChestRig_057;Base.Bag_ChestRig_060;Base.Bag_ChestRig_061;Base.Bag_ChestRig_066;Base.Bag_ChestRig_068;Base.Bag_ChestRig_069;Base.Bag_ChestRig_072;Base.Bag_ChestRig_083;Base.Bag_ChestRig_085;Base.Bag_ChestRig_086;Base.Bag_ChestRig_D01;Base.Bag_ChestRig_DAR;Base.Bag_ChestRig_DRA;Base.Bag_ChestRig_DSA;Base.Bag_ChestRig_G01;Base.Bag_ChestRig_GIR;Base.Bag_ChestRig_HD3;Base.Bag_ChestRig_HK3;Base.Bag_ChestRig_Tarp;Base.Bag_ClothSatchel_Burlap;Base.Bag_ClothSatchel_Cotton;Base.Bag_ClothSatchel_Denim;Base.Bag_ClothSatchel_DenimBlack;Base.Bag_ClothSatchel_DenimLight;Base.Bag_CraftedFramepack_Large;Base.Bag_CraftedFramepack_Large2;Base.Bag_CraftedFramepack_Large3;Base.Bag_CraftedFramepack_Small;Base.Bag_DuffelBag;Base.Bag_DuffelBagTINT;Base.Bag_FannyPackBack;Base.Bag_FannyPackBack_Hide;Base.Bag_FannyPackBack_Tarp;Base.Bag_FannyPackFront;Base.Bag_FannyPackFront_Hide;Base.Bag_FannyPackFront_Tarp;Base.Bag_FishingBasket;Base.Bag_FoodCanned;Base.Bag_FoodSnacks;Base.Bag_GolfBag;Base.Bag_GolfBag_Melee;Base.Bag_HideSatchel;Base.Bag_HideSlingBag;Base.Bag_HikingBag_Travel;Base.Bag_HydrationBackpack;Base.Bag_HydrationBackpack_Camo;Base.Bag_InmateEscapedBag;Base.Bag_MedicalBag;Base.Bag_Military;Base.Bag_MoneyBag;Base.Bag_NormalHikingBag;Base.Bag_Police;Base.Bag_RifleCaseCloth;Base.Bag_RifleCaseCloth2;Base.Bag_RifleCaseClothCamo;Base.Bag_SWAT;Base.Bag_Satchel;Base.Bag_SatchelPhoto;Base.Bag_Satchel_Fishing;Base.Bag_Satchel_Leather;Base.Bag_Satchel_Mail;Base.Bag_Satchel_Medical;Base.Bag_Satchel_Military;Base.Bag_Schoolbag;Base.Bag_Schoolbag_Kids;Base.Bag_Schoolbag_Medical;Base.Bag_Schoolbag_Patches;Base.Bag_Schoolbag_Travel;Base.Bag_SheetSlingBag;Base.Bag_Sheriff;Base.Bag_ShotgunBag;Base.Bag_ShotgunCaseCloth;Base.Bag_ShotgunCaseCloth2;Base.Bag_ShotgunDblBag;Base.Bag_ShotgunDblSawnoffBag;Base.Bag_ShotgunSawnoffBag;Base.Bag_SurvivorBag;Base.Bag_TarpFramepack_Large;Base.Bag_TarpFramepack_Small;Base.Bag_TarpSlingBag;Base.Bag_TennisBag;Base.Bag_ToolBag;Base.Bag_WeaponBag;Base.Bag_WorkerBag;Base.Bag_cat54;Base.Bag_cat55;Base.Bag_cat61;Base.Bag_cat63;Base.CamoHydrationPackpack;Base.HolsterShoulder;Base.Mai_Vest_01;Base.PE_CraftedFramepack_Large;Base.PE_FannyPackBack;Base.PE_FannyPackFront;Base.PE_HideSatchel;Base.ResidentEvilBackPack;Base.ResidentEvilSuspenders;Base.RuBag;Base.RuBag1;Base.RuBag2;Base.SST02_ChestRig;Base.SST_Belt;Base.SST_Belt_1;Base.bag_cat40;Base.cat_AutoReload;TheyKnew.MysteriousBackPack;TheyKnew.MysteriousSatchel] mode:keep flags[IsNotWorn;AllowFavorite;ItemCount],
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 14 [Base.RippedSheets] mode:destroy,
+            item 6 [Base.LeatherStrips] mode:destroy,
+            item 8 [Base.Thread],
+        }
+        outputs
+        {
+        }
+    }
+    craftRecipe SuQingAutoUpgrade5
+    {
+        Icon = Item_SuQingAutoUpgrade5,
+        timedAction = SewingCloth,
+        Time = 120,
+        NeedToBeLearn = False,
+        AllowBatchCraft = False,
+        Tags = InHandCraft,
+        category = SuQingAuto,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:6,
+        OnTest = SuQingContainerUpgradeAuto.Test5,
+        OnCreate = SuQingContainerUpgradeAuto.Create5,
+        inputs
+        {
+            item 1 [Base.2dw_astrobackpack;Base.2dw_classicsailorbag;Base.2dw_huyukanobag;Base.2dw_lopearbackpack;Base.2dw_nighthawkbeltl;Base.2dw_nighthawkbeltm;Base.2dw_nighthawkbelts;Base.2dw_reapenforcearmourbow;Base.2dw_reapenforcebag;Base.2dw_searchbag;Base.2dw_seasidebag;Base.2dw_skulllegbagl;Base.2dw_skulllegbagsm;Base.2dw_stregabackpackl;Base.2dw_stregabackpackm;Base.2dw_stregabackpacks;Base.2dw_winterbag;Base.AmmoStrap_Brown_Bullets;Base.AmmoStrap_Brown_Shells;Base.AmmoStrap_Bullets;Base.AmmoStrap_Bullets_308;Base.AmmoStrap_Shells;Base.BagS_cat_1;Base.BagS_cat_10;Base.BagS_cat_11;Base.BagS_cat_12;Base.BagS_cat_13;Base.BagS_cat_14;Base.BagS_cat_15;Base.BagS_cat_16;Base.BagS_cat_17;Base.BagS_cat_18;Base.BagS_cat_19;Base.BagS_cat_2;Base.BagS_cat_20;Base.BagS_cat_21;Base.BagS_cat_22;Base.BagS_cat_23;Base.BagS_cat_24;Base.BagS_cat_25;Base.BagS_cat_3;Base.BagS_cat_4;Base.BagS_cat_5;Base.BagS_cat_6;Base.BagS_cat_7;Base.BagS_cat_8;Base.BagS_cat_9;Base.Bag_ALICE_BeltSus;Base.Bag_ALICE_BeltSus_Camo;Base.Bag_ALICE_BeltSus_Green;Base.Bag_ALICEpack;Base.Bag_ALICEpack_Army;Base.Bag_ALICEpack_DesertCamo;Base.Bag_BaseballBag;Base.Bag_BigHikingBag;Base.Bag_BigHikingBag_Travel;Base.Bag_BreakdownBag;Base.Bag_BurglarBag;Base.Bag_ChestRig;Base.Bag_ChestRig_050;Base.Bag_ChestRig_056;Base.Bag_ChestRig_057;Base.Bag_ChestRig_060;Base.Bag_ChestRig_061;Base.Bag_ChestRig_066;Base.Bag_ChestRig_068;Base.Bag_ChestRig_069;Base.Bag_ChestRig_072;Base.Bag_ChestRig_083;Base.Bag_ChestRig_085;Base.Bag_ChestRig_086;Base.Bag_ChestRig_D01;Base.Bag_ChestRig_DAR;Base.Bag_ChestRig_DRA;Base.Bag_ChestRig_DSA;Base.Bag_ChestRig_G01;Base.Bag_ChestRig_GIR;Base.Bag_ChestRig_HD3;Base.Bag_ChestRig_HK3;Base.Bag_ChestRig_Tarp;Base.Bag_ClothSatchel_Burlap;Base.Bag_ClothSatchel_Cotton;Base.Bag_ClothSatchel_Denim;Base.Bag_ClothSatchel_DenimBlack;Base.Bag_ClothSatchel_DenimLight;Base.Bag_CraftedFramepack_Large;Base.Bag_CraftedFramepack_Large2;Base.Bag_CraftedFramepack_Large3;Base.Bag_CraftedFramepack_Small;Base.Bag_DuffelBag;Base.Bag_DuffelBagTINT;Base.Bag_FannyPackBack;Base.Bag_FannyPackBack_Hide;Base.Bag_FannyPackBack_Tarp;Base.Bag_FannyPackFront;Base.Bag_FannyPackFront_Hide;Base.Bag_FannyPackFront_Tarp;Base.Bag_FishingBasket;Base.Bag_FoodCanned;Base.Bag_FoodSnacks;Base.Bag_GolfBag;Base.Bag_GolfBag_Melee;Base.Bag_HideSatchel;Base.Bag_HideSlingBag;Base.Bag_HikingBag_Travel;Base.Bag_HydrationBackpack;Base.Bag_HydrationBackpack_Camo;Base.Bag_InmateEscapedBag;Base.Bag_MedicalBag;Base.Bag_Military;Base.Bag_MoneyBag;Base.Bag_NormalHikingBag;Base.Bag_Police;Base.Bag_RifleCaseCloth;Base.Bag_RifleCaseCloth2;Base.Bag_RifleCaseClothCamo;Base.Bag_SWAT;Base.Bag_Satchel;Base.Bag_SatchelPhoto;Base.Bag_Satchel_Fishing;Base.Bag_Satchel_Leather;Base.Bag_Satchel_Mail;Base.Bag_Satchel_Medical;Base.Bag_Satchel_Military;Base.Bag_Schoolbag;Base.Bag_Schoolbag_Kids;Base.Bag_Schoolbag_Medical;Base.Bag_Schoolbag_Patches;Base.Bag_Schoolbag_Travel;Base.Bag_SheetSlingBag;Base.Bag_Sheriff;Base.Bag_ShotgunBag;Base.Bag_ShotgunCaseCloth;Base.Bag_ShotgunCaseCloth2;Base.Bag_ShotgunDblBag;Base.Bag_ShotgunDblSawnoffBag;Base.Bag_ShotgunSawnoffBag;Base.Bag_SurvivorBag;Base.Bag_TarpFramepack_Large;Base.Bag_TarpFramepack_Small;Base.Bag_TarpSlingBag;Base.Bag_TennisBag;Base.Bag_ToolBag;Base.Bag_WeaponBag;Base.Bag_WorkerBag;Base.Bag_cat54;Base.Bag_cat55;Base.Bag_cat61;Base.Bag_cat63;Base.CamoHydrationPackpack;Base.HolsterShoulder;Base.Mai_Vest_01;Base.PE_CraftedFramepack_Large;Base.PE_FannyPackBack;Base.PE_FannyPackFront;Base.PE_HideSatchel;Base.ResidentEvilBackPack;Base.ResidentEvilSuspenders;Base.RuBag;Base.RuBag1;Base.RuBag2;Base.SST02_ChestRig;Base.SST_Belt;Base.SST_Belt_1;Base.bag_cat40;Base.cat_AutoReload;TheyKnew.MysteriousBackPack;TheyKnew.MysteriousSatchel] mode:keep flags[IsNotWorn;AllowFavorite;ItemCount],
+            item 1 tags[base:sewingneedle] mode:keep,
+            item 20 [Base.RippedSheets] mode:destroy,
+            item 10 [Base.LeatherStrips] mode:destroy,
+            item 10 [Base.Thread],
+        }
+        outputs
+        {
+        }
+    }
+    craftRecipe SuQingAutoRestore
+    {
+        Icon = Item_SuQingAutoRestore,
+        timedAction = SewingCloth,
+        Time = 20,
+        NeedToBeLearn = False,
+        AllowBatchCraft = False,
+        Tags = InHandCraft,
+        category = SuQingAuto,
+        OnTest = SuQingContainerUpgradeAuto.TestRestore,
+        OnCreate = SuQingContainerUpgradeAuto.Restore,
+        inputs
+        {
+            item 1 [Base.2dw_astrobackpack;Base.2dw_classicsailorbag;Base.2dw_huyukanobag;Base.2dw_lopearbackpack;Base.2dw_nighthawkbeltl;Base.2dw_nighthawkbeltm;Base.2dw_nighthawkbelts;Base.2dw_reapenforcearmourbow;Base.2dw_reapenforcebag;Base.2dw_searchbag;Base.2dw_seasidebag;Base.2dw_skulllegbagl;Base.2dw_skulllegbagsm;Base.2dw_stregabackpackl;Base.2dw_stregabackpackm;Base.2dw_stregabackpacks;Base.2dw_winterbag;Base.AmmoStrap_Brown_Bullets;Base.AmmoStrap_Brown_Shells;Base.AmmoStrap_Bullets;Base.AmmoStrap_Bullets_308;Base.AmmoStrap_Shells;Base.BagS_cat_1;Base.BagS_cat_10;Base.BagS_cat_11;Base.BagS_cat_12;Base.BagS_cat_13;Base.BagS_cat_14;Base.BagS_cat_15;Base.BagS_cat_16;Base.BagS_cat_17;Base.BagS_cat_18;Base.BagS_cat_19;Base.BagS_cat_2;Base.BagS_cat_20;Base.BagS_cat_21;Base.BagS_cat_22;Base.BagS_cat_23;Base.BagS_cat_24;Base.BagS_cat_25;Base.BagS_cat_3;Base.BagS_cat_4;Base.BagS_cat_5;Base.BagS_cat_6;Base.BagS_cat_7;Base.BagS_cat_8;Base.BagS_cat_9;Base.Bag_ALICE_BeltSus;Base.Bag_ALICE_BeltSus_Camo;Base.Bag_ALICE_BeltSus_Green;Base.Bag_ALICEpack;Base.Bag_ALICEpack_Army;Base.Bag_ALICEpack_DesertCamo;Base.Bag_BaseballBag;Base.Bag_BigHikingBag;Base.Bag_BigHikingBag_Travel;Base.Bag_BreakdownBag;Base.Bag_BurglarBag;Base.Bag_ChestRig;Base.Bag_ChestRig_050;Base.Bag_ChestRig_056;Base.Bag_ChestRig_057;Base.Bag_ChestRig_060;Base.Bag_ChestRig_061;Base.Bag_ChestRig_066;Base.Bag_ChestRig_068;Base.Bag_ChestRig_069;Base.Bag_ChestRig_072;Base.Bag_ChestRig_083;Base.Bag_ChestRig_085;Base.Bag_ChestRig_086;Base.Bag_ChestRig_D01;Base.Bag_ChestRig_DAR;Base.Bag_ChestRig_DRA;Base.Bag_ChestRig_DSA;Base.Bag_ChestRig_G01;Base.Bag_ChestRig_GIR;Base.Bag_ChestRig_HD3;Base.Bag_ChestRig_HK3;Base.Bag_ChestRig_Tarp;Base.Bag_ClothSatchel_Burlap;Base.Bag_ClothSatchel_Cotton;Base.Bag_ClothSatchel_Denim;Base.Bag_ClothSatchel_DenimBlack;Base.Bag_ClothSatchel_DenimLight;Base.Bag_CraftedFramepack_Large;Base.Bag_CraftedFramepack_Large2;Base.Bag_CraftedFramepack_Large3;Base.Bag_CraftedFramepack_Small;Base.Bag_DuffelBag;Base.Bag_DuffelBagTINT;Base.Bag_FannyPackBack;Base.Bag_FannyPackBack_Hide;Base.Bag_FannyPackBack_Tarp;Base.Bag_FannyPackFront;Base.Bag_FannyPackFront_Hide;Base.Bag_FannyPackFront_Tarp;Base.Bag_FishingBasket;Base.Bag_FoodCanned;Base.Bag_FoodSnacks;Base.Bag_GolfBag;Base.Bag_GolfBag_Melee;Base.Bag_HideSatchel;Base.Bag_HideSlingBag;Base.Bag_HikingBag_Travel;Base.Bag_HydrationBackpack;Base.Bag_HydrationBackpack_Camo;Base.Bag_InmateEscapedBag;Base.Bag_MedicalBag;Base.Bag_Military;Base.Bag_MoneyBag;Base.Bag_NormalHikingBag;Base.Bag_Police;Base.Bag_RifleCaseCloth;Base.Bag_RifleCaseCloth2;Base.Bag_RifleCaseClothCamo;Base.Bag_SWAT;Base.Bag_Satchel;Base.Bag_SatchelPhoto;Base.Bag_Satchel_Fishing;Base.Bag_Satchel_Leather;Base.Bag_Satchel_Mail;Base.Bag_Satchel_Medical;Base.Bag_Satchel_Military;Base.Bag_Schoolbag;Base.Bag_Schoolbag_Kids;Base.Bag_Schoolbag_Medical;Base.Bag_Schoolbag_Patches;Base.Bag_Schoolbag_Travel;Base.Bag_SheetSlingBag;Base.Bag_Sheriff;Base.Bag_ShotgunBag;Base.Bag_ShotgunCaseCloth;Base.Bag_ShotgunCaseCloth2;Base.Bag_ShotgunDblBag;Base.Bag_ShotgunDblSawnoffBag;Base.Bag_ShotgunSawnoffBag;Base.Bag_SurvivorBag;Base.Bag_TarpFramepack_Large;Base.Bag_TarpFramepack_Small;Base.Bag_TarpSlingBag;Base.Bag_TennisBag;Base.Bag_ToolBag;Base.Bag_WeaponBag;Base.Bag_WorkerBag;Base.Bag_cat54;Base.Bag_cat55;Base.Bag_cat61;Base.Bag_cat63;Base.Bag_cat_5;Base.CamoHydrationPackpack;Base.HolsterShoulder;Base.Mai_Vest_01;Base.PE_CraftedFramepack_Large;Base.PE_FannyPackBack;Base.PE_FannyPackFront;Base.PE_HideSatchel;Base.ResidentEvilBackPack;Base.ResidentEvilSuspenders;Base.RuBag;Base.RuBag1;Base.RuBag2;Base.SST02_ChestRig;Base.SST_Belt;Base.SST_Belt_1;Base.bag_cat40;Base.cat_AutoReload;TheyKnew.MysteriousBackPack;TheyKnew.MysteriousSatchel] mode:keep flags[IsNotWorn;AllowFavorite;ItemCount],
+        }
+        outputs
+        {
+        }
+    }
+}

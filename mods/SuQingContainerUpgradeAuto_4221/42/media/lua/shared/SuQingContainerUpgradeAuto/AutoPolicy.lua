@@ -1,0 +1,23 @@
+-- Exact legacy exclusions take priority over automatic discovery.
+SuQingContainerUpgradeAutoPolicy = {
+    ["Base.Bag_CrudeLeatherBag"] = "原版AssembleSmallFramepack消耗本包并升级为更大容器；使用原版升级途径。",
+    ["Base.Bag_CrudeTarpBag"] = "原版AssembleSmallFramepack消耗本包并升级为更大容器；使用原版升级途径。",
+    ["Base.Bag_cat_1"] = "已有原模组一至六级扩容链，使用原模组升级；仅踏行千山五保留有效旧蘇清记录的还原入口。",
+    ["Base.Bag_cat_2"] = "已有原模组一至六级扩容链，使用原模组升级；仅踏行千山五保留有效旧蘇清记录的还原入口。",
+    ["Base.Bag_cat_3"] = "已有原模组一至六级扩容链，使用原模组升级；仅踏行千山五保留有效旧蘇清记录的还原入口。",
+    ["Base.Bag_cat_4"] = "已有原模组一至六级扩容链，使用原模组升级；仅踏行千山五保留有效旧蘇清记录的还原入口。",
+    ["Base.Bag_cat_5"] = "已有原模组一至六级扩容链，使用原模组升级；仅踏行千山五保留有效旧蘇清记录的还原入口。",
+    ["Base.Bag_cat_6"] = "已有原模组一至六级扩容链，使用原模组升级；仅踏行千山五保留有效旧蘇清记录的还原入口。",
+    ["Base.MaoMaoBackpack"] = "Dynamic capacity is handled by the separate Nekomata EX extension.",
+    ["Base.MikuBackPack"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Black"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Blue"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Brown"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Green"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Orange"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Pink"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Purple"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_Red"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+    ["LB.Bag_LegendaryBackpack_White"] = "原规格已达到或超过本强化目标，无需收费强化；保留原生容量、液体/外观及全部功能。",
+}

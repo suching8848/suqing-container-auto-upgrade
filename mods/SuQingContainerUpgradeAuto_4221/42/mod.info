@@ -1,0 +1,11 @@
+name=蘇清的容器升级·自动识别测试版
+namezh=蘇清的容器升级·自动识别测试版
+id=SuQingContainerUpgradeAuto_4221
+author=SuQing / local prototype
+modversion=0.1.0-test
+icon=icon.png
+poster=poster.png
+versionMin=42.21
+versionMax=42.21
+loadModAfter=FantasyWorkshopVS42_4.0,4123567854998,TheyKnewContinued,BackpackSystemB42,SuPrimitiveEquipment,RaccoonCityB42,Neat_Crafting,CleanUI,Codex_InventoryTransferPerformance_4221
+description=独立普通升级测试版。保留原168项精确适配与特殊规则；启动时发现容器定义，操作时校验标准可穿戴容器。未知高容量、动态容量、创建回调及换位改码装备暂不自动收费强化。沿用五档、原生制作与实付50%返料。独立强化记录，不读取或迁移旧版记录；同时启用旧普通版时本测试版拒绝操作。仅为以后新档准备，实际游戏功能待验证。
