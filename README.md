@@ -1,4 +1,6 @@
-# 蘇清的自动容器升级模组 / SuQing’s Automatic Container Upgrades Mod
+# 蘇清的容器自动识别升级模组（实验版） / SuQing’s Automatic Container Upgrades Mod — Experimental
+
+[中文](#中文) · [English](#english)
 
 **0.1.0-test · Project Zomboid Build 42.21 · 单人实验版 / Single-player experimental version**
 
@@ -21,7 +23,7 @@
 
 退出游戏并保留恢复方案后，将 `mods/SuQingContainerUpgradeAuto_4221` 复制到用户 `Zomboid/mods`，保留 `42`、`common`。仅在隔离的新单人测试档中启用，保持来源模组所需顺序；不自动部署或更改任何列表。制作分类为“蘇清·自动识别测试”；卸下容器，放主物品栏，清空物品及全部液体后操作。
 
-[蘇清的综合补丁 / SuQing’s Project Zomboid Patches](https://github.com/suching8848/suqing-project-zomboid-patches)保留作者环境的独立修复，但**普通版专用兼容补丁不自动适用于本实验版**。例如 `Codex_SuQingWearableCompat_4221` 明确依赖普通容器主模组；不要为满足它而同时打开普通版和自动版。未知特殊容器需要针对本命名空间的适配及测试。
+[蘇清的僵尸毁灭工程补丁合集 / SuQing’s Project Zomboid Patches](https://github.com/suching8848/suqing-project-zomboid-patches)保留作者环境的独立修复，但**普通版专用兼容补丁不自动适用于本实验版**。例如 `Codex_SuQingWearableCompat_4221` 明确依赖普通容器主模组；不要为满足它而同时打开普通版和自动版。未知特殊容器需要针对本命名空间的适配及测试。
 
 已强化物品要先按需还原再移除本模组。普通强化会保存物理属性，停用不会自动恢复；本实验版也不会替你迁移回普通版记录。不要执行历史默认名单回滚脚本覆盖后续设置。本仓库没有包含部署、回滚脚本或个人配置。
 
@@ -59,3 +61,15 @@ Restore upgraded items as appropriate before removing this mod. Ordinary upgrade
 Authored recognition/material-transaction fixtures and native recipe-cache tests are retained. Use the [validation entry point](docs/TESTING.md) with your own game installation. Offline mocks do not establish real UI, transfers, save/reload or compatibility with every unknown mod. Multiplayer and dedicated servers remain untested.
 
 This branch derives from the author's ordinary container code. Icons reuse the same author's existing AI-assisted ordinary-version assets; no new images were generated. `mods/` matches the development/installable source byte for byte; historical backups were not regenerated over newer runtime code. Original game/equipment mods belong to their authors; no blanket open-source license is assigned. See [Sources and assets](docs/SOURCES.md).
+
+## 相关项目与配置快照
+
+[全部 8 个模组与补丁仓库](docs/project-index.md) · [当前单人档 205 项启用顺序](docs/current-single-player-modlist.md) · [作者 Steam 合集](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387)
+
+源码索引涵盖 37 个 Mod ID。Steam 合集不附带独立本地补丁；按各项目的前置和条件兼容说明选择子项。启用快照不代表每个项目或新增版本均已通过游戏内验收。
+
+## Related projects and setup snapshot
+
+[All eight mod and patch repositories](docs/project-index.md) · [Current 205-ID enabled order](docs/current-single-player-modlist.md) · [Author’s Steam collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387)
+
+The source index covers 37 Mod IDs. The Steam collection does not include separately installed local patches; select entries using each project’s requirements and conditional integration notes. Enabled state does not establish in-game acceptance of every project or new version.
