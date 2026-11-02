@@ -30,9 +30,18 @@
     "42/media/textures/Item_SuQingAutoUpgrade4.png": "8d7482534c8b374836c6ddbdee1b8f6e0f5adea80e9a0a7e75e72ef14904ef23",
     "42/media/textures/Item_SuQingAutoUpgrade5.png": "ee3ee534211bf72acc9c1b9f51703597424f00e9af63f4b82e21724075e66e2e",
     "42/media/ui/CategoryIcon/SuQing.png": "85a0141e571786609695529105afbacfaddc0726ae6a96db234242f9ffa97aef",
-    "42/mod.info": "6741acf7f67ce677322ba74044d8364c738ff1b9fafa6c8cb72b9417658226f9",
+    "42/mod.info": "31b76b424d43a92d0a9b03f9d3be9663e435fcbcf2154cb04a6522b481bc82cf",
     "42/poster.png": "672bf841f1400c3dccfeee61ba827a0188af1cbb60257850d65adec4ae6a2fef",
     "common/README.txt": "c423e7aa21e746bf16279e40e820542dcb10f8582ff92e73ba6581c4c0144c69",
-    "README.txt": "7e9c26166e469d1b365cb453e09df781b57c9b3a8b572ec0f0470d6c19584ba1"
+    "README.txt": "a3b3b411221aa3926deb308fd24a89e4e1095b55bb86bc18465c32d933ad5de6"
+  },
+  "metadata_revision": {
+    "baseline_commit": "9c86dc44d0372783af29e8bcf462be950fd13481",
+    "changed_package_files": [
+      "README.txt",
+      "42/mod.info"
+    ],
+    "note_zh": "仅更新使用建议、作者未游戏内实测声明及双语说明；运行Lua、配方、翻译、图片、Mod ID和版本未改。files记录当前包，而非历史源整包字节一致声明。",
+    "note_en": "Usage advice, the author-not-play-tested statement and bilingual documentation only. Runtime Lua, recipes, translations, images, Mod ID and version are unchanged. files records the current package, not a claim of full historical-package byte identity."
   }
 }

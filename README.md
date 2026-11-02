@@ -2,11 +2,17 @@
 
 [中文](#中文) · [English](#english)
 
+> **建议使用[固定名单版本](https://github.com/suching8848/suqing-container-upgrade)；自动适配版本作者本人还没有游戏内实测。**
+>
+> **Prefer the [fixed-list release](https://github.com/suching8848/suqing-container-upgrade); the author has not play-tested this automatic-adaptation version in the game.**
+
 **0.1.0-test · Project Zomboid Build 42.21 · 单人实验版 / Single-player experimental version**
 
 ## 中文
 
-为未来新档准备的独立普通容量升级实验版，Mod ID `SuQingContainerUpgradeAuto_4221`。**当前正式单人档未启用本版；不能把作者当前配置游玩正常的反馈当成本实验版已完成实机验收。** 本次只同步代码，不修改存档、默认启用列表或游戏安装。
+**建议使用固定名单版本；自动适配版本作者本人还没有游戏内实测。**
+
+为未来新档准备的独立普通容量升级实验版，Mod ID `SuQingContainerUpgradeAuto_4221`。**当前正式单人档未启用本版；不能把作者当前配置游玩正常的反馈当成本实验版已完成实机验收。** 本次只更新说明和元数据，不修改运行代码、图片、存档、默认启用列表或游戏安装。
 
 它与[普通容器升级模组](https://github.com/suching8848/suqing-container-upgrade)是互斥选择。代码检测普通 Mod ID `SuQingContainerUpgrade_4221` 同时启用时拒绝操作；它使用独立命名空间和记录，不读取或迁移普通版的强化记录。**不要把两个普通升级版同时启用，也不要直接用本版替换已有强化的正式档。** EX 背包超级升级是另一独立项目。
 
@@ -31,11 +37,13 @@
 
 保留开发期识别/材料事务 fixture 和原生配方缓存验证源码，可用 [验证入口](docs/TESTING.md) 在自有游戏安装上重跑。离线模拟不等于真实 UI、转移、保存重进或所有未知模组兼容；多人和专用服务器未验证。
 
-本实验版来源于作者自己的普通容器代码分支，图标复用同作者普通版已有 AI 辅助资源；未生成新图像。`mods/` 与开发安装包逐字节一致，没有把旧备份重新生成或覆盖为新运行代码。原游戏和装备来源模组归各自作者，未擅加统一开源许可。详见 [来源与素材](docs/SOURCES.md)。
+本实验版来源于作者自己的普通容器代码分支，图标复用同作者普通版已有 AI 辅助资源；未生成新图像。`mods/` 内的运行 Lua、配方、翻译与图片保持开发安装包原字节；只有 `README.txt` 和 `42/mod.info` 的说明按本次要求更新。`docs/runtime-sha256.json` 记录当前包快照，不能再把整包称为与历史源逐字节一致。原游戏和装备来源模组归各自作者，未擅加统一开源许可。详见 [来源与素材](docs/SOURCES.md)。
 
 ## English
 
-An independent ordinary-capacity experiment intended for future new saves, with Mod ID `SuQingContainerUpgradeAuto_4221`. **It is not enabled in the author's current main single-player save. Reports of normal play in the current setup do not establish in-game acceptance of this experiment.** This migration synchronizes source only, without changing saves, default enabled lists or the installed game.
+**Prefer the fixed-list release; the author has not play-tested this automatic-adaptation version in the game.**
+
+An independent ordinary-capacity experiment intended for future new saves, with Mod ID `SuQingContainerUpgradeAuto_4221`. **It is not enabled in the author's current main single-player save. Reports of normal play in the current setup do not establish in-game acceptance of this experiment.** This update changes documentation and metadata only, without changing runtime code, images, saves, default enabled lists or the installed game.
 
 It is an alternative to [ordinary Container Upgrades](https://github.com/suching8848/suqing-container-upgrade). Code refuses operations when ordinary Mod ID `SuQingContainerUpgrade_4221` is also enabled. Its namespace and records are independent; it neither reads nor migrates ordinary upgrade records. **Do not enable both ordinary-upgrade versions together or directly replace an established upgraded save with this experiment.** EX Backpack Super Upgrades is another independent project.
 
@@ -60,7 +68,7 @@ Restore upgraded items as appropriate before removing this mod. Ordinary upgrade
 
 Authored recognition/material-transaction fixtures and native recipe-cache tests are retained. Use the [validation entry point](docs/TESTING.md) with your own game installation. Offline mocks do not establish real UI, transfers, save/reload or compatibility with every unknown mod. Multiplayer and dedicated servers remain untested.
 
-This branch derives from the author's ordinary container code. Icons reuse the same author's existing AI-assisted ordinary-version assets; no new images were generated. `mods/` matches the development/installable source byte for byte; historical backups were not regenerated over newer runtime code. Original game/equipment mods belong to their authors; no blanket open-source license is assigned. See [Sources and assets](docs/SOURCES.md).
+This branch derives from the author's ordinary container code. Icons reuse the same author's existing AI-assisted ordinary-version assets; no new images were generated. Runtime Lua, recipes, translations and images in `mods/` retain the development package bytes. Only `README.txt` and the description in `42/mod.info` were revised. `docs/runtime-sha256.json` records the current package snapshot; the whole package is no longer claimed to be byte-identical to the historical source. Original game/equipment mods belong to their authors; no blanket open-source license is assigned. See [Sources and assets](docs/SOURCES.md).
 
 ## 相关项目与配置快照
 

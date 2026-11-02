@@ -8,4 +8,4 @@ poster=poster.png
 versionMin=42.21
 versionMax=42.21
 loadModAfter=FantasyWorkshopVS42_4.0,4123567854998,TheyKnewContinued,BackpackSystemB42,SuPrimitiveEquipment,RaccoonCityB42,Neat_Crafting,CleanUI,Codex_InventoryTransferPerformance_4221
-description=独立普通升级测试版。保留原168项精确适配与特殊规则；启动时发现容器定义，操作时校验标准可穿戴容器。未知高容量、动态容量、创建回调及换位改码装备暂不自动收费强化。沿用五档、原生制作与实付50%返料。独立强化记录，不读取或迁移旧版记录；同时启用旧普通版时本测试版拒绝操作。仅为以后新档准备，实际游戏功能待验证。
+description=建议使用固定名单版本；自动适配版本作者本人还没有游戏内实测。 固定名单版：https://github.com/suching8848/suqing-container-upgrade 独立普通升级实验版，保留168项既有适配；启动时发现定义，操作时验证标准可穿戴容器。未知特殊容器需单独适配；五档及实付50%返料不变。独立记录，不迁移普通版记录，与普通版同时启用时拒绝操作。 | Prefer the fixed-list release; the author has not play-tested this automatic-adaptation version in the game. Fixed-list release: https://github.com/suching8848/suqing-container-upgrade Independent ordinary-upgrade experiment retaining 168 existing supported IDs. Discovers definitions at startup and validates wearable instances on use; unknown special containers need adapters. Five tiers and 50% actual-payment refunds are unchanged. Independent records are not migrated from the ordinary version; operations are refused when both versions are enabled.
