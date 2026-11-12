@@ -1,5 +1,5 @@
 蘇清的容器升级·自动识别测试版 / SuQing’s Automatic Container Upgrades — Experimental
-0.1.0-test · Project Zomboid Build 42.21 单人 / single-player
+0.1.0-test · Project Zomboid Build 42.21 / 42.22 单人 / single-player
 
 建议使用固定名单版本；自动适配版本作者本人还没有游戏内实测。
 Prefer the fixed-list release; the author has not play-tested this automatic-adaptation version in the game.
@@ -15,7 +15,7 @@ Prefer the fixed-list release; the author has not play-tested this automatic-ada
 制作分类“蘇清·自动识别测试”；材料、裁缝等级、五档目标及实付50%还原沿用本分支原规则。
 卸下容器，放主物品栏，清空普通物品及全部液体后操作。
 建议仅在有恢复方案的隔离新单人测试档使用。离线Kahlua/原生解析检查不等于作者游戏内实测，界面、真实转移和保存重进仍未由作者实机确认；多人未验证。
-说明和mod.info描述已更新；运行代码、翻译、配方、图片、Mod ID及版本未改。当前包哈希见docs/runtime-sha256.json，不再宣称整个包与历史安装源逐字节相同。
+版本范围和说明已更新；运行代码、翻译、配方、图片、Mod ID及版本未改。当前包哈希见docs/runtime-sha256.json，不再宣称整个包与历史安装源逐字节相同。
 
 English
 This is an independent ordinary-capacity experiment, not EX. It is not enabled in the current main single-player save; reports of normal play in the author's complete setup do not validate this experiment in the game.
@@ -27,4 +27,4 @@ Standard unknown wearable containers can be paid-upgrade targets only after inst
 Use the “蘇清·自动识别测试” crafting category. Existing material costs, Tailoring levels, five tier targets and 50% actual-payment restoration remain unchanged.
 Unequip the container, place it in main inventory and empty all items and fluids before use.
 Use only in an isolated new single-player test save with a recovery option. Offline Kahlua/native-parser checks are not the author's in-game play-test. UI, real transfers and save/reload have not been accepted by the author in the game; multiplayer is untested.
-Documentation and the mod.info description were revised. Runtime code, translations, recipes, images, Mod ID and version are unchanged. The current package snapshot is in docs/runtime-sha256.json; the whole package is no longer claimed to be byte-identical to its historical source.
+The supported version range and documentation were revised. Runtime code, translations, recipes, images, Mod ID and version are unchanged. The current package snapshot is in docs/runtime-sha256.json; the whole package is no longer claimed to be byte-identical to its historical source.

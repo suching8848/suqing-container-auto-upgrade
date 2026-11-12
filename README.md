@@ -6,7 +6,7 @@
 >
 > **Prefer the [fixed-list release](https://github.com/suching8848/suqing-container-upgrade); the author has not play-tested this automatic-adaptation version in the game.**
 
-**0.1.0-test · Project Zomboid Build 42.21 · 单人实验版 / Single-player experimental version**
+**0.1.0-test · Project Zomboid Build 42.21 / 42.22 · 单人实验版 / Single-player experimental version**
 
 ## 中文
 
@@ -35,9 +35,9 @@
 
 ### 验证与来源
 
-保留开发期识别/材料事务 fixture 和原生配方缓存验证源码，可用 [验证入口](docs/TESTING.md) 在自有游戏安装上重跑。离线模拟不等于真实 UI、转移、保存重进或所有未知模组兼容；多人和专用服务器未验证。
+42.22.2 已离线通过自动识别、材料事务、原生配方缓存和普通版互斥回归。保留识别/材料事务 fixture 和原生配方缓存验证源码，可用 [验证入口](docs/TESTING.md) 在自有游戏安装上重跑。离线模拟不等于真实 UI、转移、保存重进或所有未知模组兼容；多人和专用服务器未验证。
 
-本实验版来源于作者自己的普通容器代码分支，图标复用同作者普通版已有 AI 辅助资源；未生成新图像。`mods/` 内的运行 Lua、配方、翻译与图片保持开发安装包原字节；只有 `README.txt` 和 `42/mod.info` 的说明按本次要求更新。`docs/runtime-sha256.json` 记录当前包快照，不能再把整包称为与历史源逐字节一致。原游戏和装备来源模组归各自作者，未擅加统一开源许可。详见 [来源与素材](docs/SOURCES.md)。
+本实验版来源于作者自己的普通容器代码分支，图标复用同作者普通版已有 AI 辅助资源；未生成新图像。`mods/` 内的运行 Lua、配方、翻译与图片保持开发安装包原字节；包内 `README.txt` 和 `42/mod.info` 记录适用版本。`docs/runtime-sha256.json` 记录当前包快照，不能再把整包称为与历史源逐字节一致。原游戏和装备来源模组归各自作者，未擅加统一开源许可。详见 [来源与素材](docs/SOURCES.md)。
 
 ## English
 
@@ -66,9 +66,9 @@ Restore upgraded items as appropriate before removing this mod. Ordinary upgrade
 
 ### Validation and sources
 
-Authored recognition/material-transaction fixtures and native recipe-cache tests are retained. Use the [validation entry point](docs/TESTING.md) with your own game installation. Offline mocks do not establish real UI, transfers, save/reload or compatibility with every unknown mod. Multiplayer and dedicated servers remain untested.
+On 42.22.2, offline checks passed for automatic discovery, material transactions, native recipe caches and mutual exclusion with the fixed-list release. The recognition and transaction fixtures and native cache tests are retained. Use the [validation entry point](docs/TESTING.md) with your own game installation. Offline mocks do not establish real UI, transfers, save/reload or compatibility with every unknown mod. Multiplayer and dedicated servers remain untested.
 
-This branch derives from the author's ordinary container code. Icons reuse the same author's existing AI-assisted ordinary-version assets; no new images were generated. Runtime Lua, recipes, translations and images in `mods/` retain the development package bytes. Only `README.txt` and the description in `42/mod.info` were revised. `docs/runtime-sha256.json` records the current package snapshot; the whole package is no longer claimed to be byte-identical to the historical source. Original game/equipment mods belong to their authors; no blanket open-source license is assigned. See [Sources and assets](docs/SOURCES.md).
+This branch derives from the author's ordinary container code. Icons reuse the same author's existing AI-assisted ordinary-version assets; no new images were generated. Runtime Lua, recipes, translations and images in `mods/` retain the development package bytes. The packaged `README.txt` and `42/mod.info` record the supported version range. `docs/runtime-sha256.json` records the current package snapshot; the whole package is no longer claimed to be byte-identical to the historical source. Original game/equipment mods belong to their authors; no blanket open-source license is assigned. See [Sources and assets](docs/SOURCES.md).
 
 ## 相关项目与配置快照
 
