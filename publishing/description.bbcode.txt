@@ -1,28 +1,19 @@
 [b]建议使用固定名单版本；自动适配版本作者本人还没有游戏内实测。[/b]
-[url=https://github.com/suching8848/suqing-container-upgrade]固定名单版 / Fixed-list release[/url]
-[b]Prefer the fixed-list release; the author has not play-tested this automatic-adaptation version in the game.[/b]
-
-[h1]蘇清的容器自动识别升级模组（实验版） / SuQing’s Automatic Container Upgrades — Experimental[/h1]
-0.1.0-test · Project Zomboid Build 42.21 单人 / single-player
-
+[b]Prefer the fixed-list release; the author has not play-tested this automatic version in the game.[/b]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3823988025]固定名单版 / Fixed-list release[/url]
 [h2]中文[/h2]
-作者本人尚未进行本自动适配版的游戏内实测；当前正式单人档未启用它。作者其他当前配置正常游玩的反馈、离线Kahlua和原生解析检查，都不能代替本版的真实界面、转移和保存重进验收。日常使用建议选择上面的固定名单版。
-
-独立普通容量升级实验，不是EX。本分支保留168项既有支持和排除规则；这不是普通发布版1.0.1的完整172项名单。启动时扫描一次脚本定义，更新本模组六条配方自己的候选ID和缓存；实际物品必须通过校验后才允许收费升级。不扫描世界、不逐帧轮询、不生成探测物品。
-
-只自动接入符合条件的标准可穿戴容器。未知高容量、动态容量、OnCreate回调、前后换位或改码装备需要单独适配；非穿戴箱子不在范围内。五档容量目标12/20/30/40/最高49、减重90/93/95/97/99%；既有更高值保留。材料、裁缝等级和实付50%还原规则沿用本分支既有实现。
-
-[b]与固定名单普通版互斥，不能同时启用。[/b] Mod ID：SuQingContainerUpgradeAuto_4221。使用独立记录，不读取或迁移SuQingContainerUpgrade_4221的强化记录，不适合直接替换已有强化的正式档。普通版专用桥接不自动适用于本命名空间，不能为满足桥接前置而同时启用两版。
-
-如需试用，仅在有恢复方案的隔离新单人测试档中启用。保留42/common目录，使用“蘇清·自动识别测试”制作分类；容器须卸下、放主物品栏、清空物品与全部液体。多人和专用服务器未验证。沿用普通版现有图像；本次只更新说明和元数据，不修改代码、配方、图片、Mod ID或版本。
-
+B42.21–42.22 单人实验版 0.1.0-test。B42.22.2 自动识别、结算及普通版互斥离线通过，游戏内待验收。建议仅在有恢复方案的隔离新档试用。当前正式单人档未启用本版，作者合集游玩反馈不适用于它，联机与专服也未验证。
+尝试自动发现符合条件的标准可穿戴容器，减少逐个维护名单的需要；本分支保留168项既有适配，并非普通1.0.1的完整172项。未知高容量、动态容量、原生换位或特殊回调装备仍须单独适配，箱子不支持；出现在制作候选中不代表一定可升级。
+五档容量12/20/30/40/最高49，减重90/93/95/97/99%；高原值保留，自重安全上限和角色特性仍影响容量。每档碎布/皮革/普通线用量4/0/2、6/2/4、10/4/6、14/6/8、20/10/10；裁缝0–4、针保留，满卷普通线20用量。卸下、放主物品栏、清空物品与液体，再用“蘇清·自动识别测试”分类。成功还原返有效账本实付50%，各类向下取整，线按用量返。
+[b]与固定名单普通版二选一，不能同时启用；不迁移普通版强化记录，勿直接替换已有强化的正式档。[/b] 基础试用不要求补丁合集，模组装备需各自来源。普通版专用补丁不自动适用于本版，不能为满足其前置而同时开两版。移除前先按需还原，停用不会自动恢复保存属性。离线检查仍不能替代真实界面、转移与保存重进验收。
+Mod ID：SuQingContainerUpgradeAuto_4221
+[url=https://github.com/suching8848/suqing-container-auto-upgrade]GitHub：实验源码、安装及测试说明[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387]作者当前单人档合集[/url]：仅供配置参考，不代表本实验版已实测或全部组合兼容。
 [h2]English[/h2]
-The author has not play-tested this automatic-adaptation version in the game, and it is not enabled in the current main single-player save. Reports of normal play with other current setups, offline Kahlua checks and native parsing do not replace acceptance of this version's actual UI, transfers and save/reload behavior. Prefer the fixed-list release above for regular play.
-
-This is an independent ordinary-capacity experiment, not EX. It retains this branch's 168 supported IDs and exclusions, not the ordinary public 1.0.1 release's complete 172-ID list. Script definitions are scanned once at startup to update only its six recipes' candidate IDs/caches. Actual instances must pass validation before paid upgrades. No world scan, per-frame polling or discovery samples.
-
-Only qualifying standard wearable containers are automatically accepted. Unknown high/dynamic capacity, OnCreate callbacks and position/size conversions require individual adapters; non-wearable crates are unsupported. Five capacity targets are 12/20/30/40/up to 49, with weight reduction 90/93/95/97/99%; higher existing values remain. This branch's existing costs, Tailoring levels and 50% actual-payment restoration rules are unchanged.
-
-[b]Mutually exclusive with the ordinary fixed-list version: do not enable both.[/b] Mod ID: SuQingContainerUpgradeAuto_4221. Records are independent; SuQingContainerUpgrade_4221 records are not read or migrated. Do not directly replace an established upgraded save. Ordinary-version-specific bridges do not automatically support this namespace; do not enable both versions to satisfy a bridge requirement.
-
-If testing, use only an isolated new single-player save with a recovery option. Preserve 42/common and use the “蘇清·自动识别测试” crafting category with the container unequipped in main inventory, empty of all items and fluids. Multiplayer/dedicated servers are untested. Existing ordinary-version images are reused. This update changes documentation/metadata only, not code, recipes, images, Mod ID or version.
+B42.21–42.22 single-player experiment 0.1.0-test. Discovery, settlement and fixed-list exclusivity passed offline on B42.22.2; play testing is pending. Try only in an isolated new save with a recovery option. It is not enabled in the author's current main save. Reports about that collection do not validate this version; multiplayer and dedicated servers are also untested.
+Attempts to discover qualifying standard wearable containers automatically, reducing manual list maintenance. This branch retains 168 existing integrations, not ordinary 1.0.1's complete 172-item list. Unknown high/dynamic capacity, native conversions and special callbacks still need individual adapters. Crates are unsupported. Appearing in crafting candidates does not guarantee eligibility.
+Capacity targets are 12/20/30/40/up to 49, with weight reduction 90/93/95/97/99%. Higher original values stay; self-weight safety limits and character traits still affect capacity. Per-tier sheet/leather/thread-use costs are 4/0/2, 6/2/4, 10/4/6, 14/6/8, 20/10/10. Tailoring 0–4, needle kept; a full normal spool has 20 uses. Unequip, put in main inventory and empty all items and fluids before using “蘇清·自动识别测试”. Successful restoration refunds 50% of actual recorded payments, rounded down per material; thread returns in uses.
+[b]Choose this or the fixed-list ordinary version, never both. Ordinary upgrade records are not migrated; do not directly replace an established upgraded save.[/b] Basic testing does not require the patch collection. Modded equipment needs its original provider. Ordinary-specific patches do not automatically support this version; never enable both versions to satisfy their requirements. Restore items as appropriate before removal: disabling does not automatically revert saved attributes. Offline checks do not establish actual UI, transfers or save/reload behavior.
+Mod ID: SuQingContainerUpgradeAuto_4221
+[url=https://github.com/suching8848/suqing-container-auto-upgrade]GitHub: experimental source, installation and testing[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3823981387]The author's current single-player collection[/url]: configuration reference only. It does not establish play-testing of this experiment or compatibility of every combination.
